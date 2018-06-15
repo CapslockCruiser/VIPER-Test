@@ -8,11 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CBFBB16220CCD8900071C50F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBB16120CCD8900071C50F /* AppDelegate.swift */; };
-		CBFBB16420CCD8900071C50F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBB16320CCD8900071C50F /* ViewController.swift */; };
-		CBFBB16720CCD8900071C50F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBFBB16520CCD8900071C50F /* Main.storyboard */; };
 		CBFBB16920CCD8910071C50F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBFBB16820CCD8910071C50F /* Assets.xcassets */; };
 		CBFBB16C20CCD8910071C50F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBFBB16A20CCD8910071C50F /* LaunchScreen.storyboard */; };
 		CBFBB17720CCD8910071C50F /* VIPER_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBB17620CCD8910071C50F /* VIPER_TestTests.swift */; };
+		CBFBB18520CCE4790071C50F /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBB18420CCE4790071C50F /* RootRouter.swift */; };
+		CBFBB18820CCEE490071C50F /* AchievementsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBB18720CCEE490071C50F /* AchievementsRouter.swift */; };
+		CBFBB18A20CCF0320071C50F /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBB18920CCF0320071C50F /* AchievementsPresenter.swift */; };
+		CBFBB18C20CCF03F0071C50F /* AchievementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBB18B20CCF03F0071C50F /* AchievementsInteractor.swift */; };
+		CBFBB18E20CCF0D20071C50F /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBB18D20CCF0D20071C50F /* AchievementsViewController.swift */; };
+		CBFBB19220CCF2650071C50F /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBB19120CCF2650071C50F /* Achievement.swift */; };
+		CBFBB19420CD609F0071C50F /* AchievementsInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBB19320CD609F0071C50F /* AchievementsInterface.swift */; };
+		CBFBB19620CD62330071C50F /* AchievementsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBFBB19520CD62330071C50F /* AchievementsStoryboard.storyboard */; };
+		CBFBB19820CE00ED0071C50F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBB19720CE00ED0071C50F /* DataManager.swift */; };
+		CBFBB19A20CE024A0071C50F /* UIElementExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBB19920CE024A0071C50F /* UIElementExtension.swift */; };
+		CBFBB19E20CF61380071C50F /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBB19D20CF61380071C50F /* Environment.swift */; };
+		CBFBB1A120CF61DD0071C50F /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = CBFBB1A020CF61DD0071C50F /* achievements.json */; };
+		CBFBB1A320D0959D0071C50F /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFBB1A220D0959D0071C50F /* ImageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +39,25 @@
 /* Begin PBXFileReference section */
 		CBFBB15E20CCD8900071C50F /* VIPER Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBFBB16120CCD8900071C50F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBFBB16320CCD8900071C50F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CBFBB16620CCD8900071C50F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBFBB16820CCD8910071C50F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBFBB16B20CCD8910071C50F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBFBB16D20CCD8910071C50F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBFBB17220CCD8910071C50F /* VIPER TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBFBB17620CCD8910071C50F /* VIPER_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_TestTests.swift; sourceTree = "<group>"; };
 		CBFBB17820CCD8910071C50F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBFBB18420CCE4790071C50F /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		CBFBB18720CCEE490071C50F /* AchievementsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsRouter.swift; sourceTree = "<group>"; };
+		CBFBB18920CCF0320071C50F /* AchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenter.swift; sourceTree = "<group>"; };
+		CBFBB18B20CCF03F0071C50F /* AchievementsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractor.swift; sourceTree = "<group>"; };
+		CBFBB18D20CCF0D20071C50F /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
+		CBFBB19120CCF2650071C50F /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		CBFBB19320CD609F0071C50F /* AchievementsInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInterface.swift; sourceTree = "<group>"; };
+		CBFBB19520CD62330071C50F /* AchievementsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AchievementsStoryboard.storyboard; sourceTree = "<group>"; };
+		CBFBB19720CE00ED0071C50F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		CBFBB19920CE024A0071C50F /* UIElementExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIElementExtension.swift; sourceTree = "<group>"; };
+		CBFBB19D20CF61380071C50F /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		CBFBB1A020CF61DD0071C50F /* achievements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievements.json; sourceTree = SOURCE_ROOT; };
+		CBFBB1A220D0959D0071C50F /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				CBFBB16120CCD8900071C50F /* AppDelegate.swift */,
-				CBFBB16320CCD8900071C50F /* ViewController.swift */,
-				CBFBB16520CCD8900071C50F /* Main.storyboard */,
+				CBFBB19F20CF61C60071C50F /* Resources */,
+				CBFBB18620CCED1F0071C50F /* AchievementsModule */,
+				CBFBB18120CCD99D0071C50F /* Common */,
 				CBFBB16820CCD8910071C50F /* Assets.xcassets */,
 				CBFBB16A20CCD8910071C50F /* LaunchScreen.storyboard */,
 				CBFBB16D20CCD8910071C50F /* Info.plist */,
@@ -94,6 +117,40 @@
 				CBFBB17820CCD8910071C50F /* Info.plist */,
 			);
 			path = "VIPER TestTests";
+			sourceTree = "<group>";
+		};
+		CBFBB18120CCD99D0071C50F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CBFBB18420CCE4790071C50F /* RootRouter.swift */,
+				CBFBB19720CE00ED0071C50F /* DataManager.swift */,
+				CBFBB19920CE024A0071C50F /* UIElementExtension.swift */,
+				CBFBB19D20CF61380071C50F /* Environment.swift */,
+				CBFBB1A220D0959D0071C50F /* ImageManager.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CBFBB18620CCED1F0071C50F /* AchievementsModule */ = {
+			isa = PBXGroup;
+			children = (
+				CBFBB18720CCEE490071C50F /* AchievementsRouter.swift */,
+				CBFBB18920CCF0320071C50F /* AchievementsPresenter.swift */,
+				CBFBB18B20CCF03F0071C50F /* AchievementsInteractor.swift */,
+				CBFBB18D20CCF0D20071C50F /* AchievementsViewController.swift */,
+				CBFBB19120CCF2650071C50F /* Achievement.swift */,
+				CBFBB19320CD609F0071C50F /* AchievementsInterface.swift */,
+				CBFBB19520CD62330071C50F /* AchievementsStoryboard.storyboard */,
+			);
+			path = AchievementsModule;
+			sourceTree = "<group>";
+		};
+		CBFBB19F20CF61C60071C50F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBFBB1A020CF61DD0071C50F /* achievements.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,8 +235,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBFBB16C20CCD8910071C50F /* LaunchScreen.storyboard in Resources */,
+				CBFBB1A120CF61DD0071C50F /* achievements.json in Resources */,
+				CBFBB19620CD62330071C50F /* AchievementsStoryboard.storyboard in Resources */,
 				CBFBB16920CCD8910071C50F /* Assets.xcassets in Resources */,
-				CBFBB16720CCD8900071C50F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +255,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBFBB16420CCD8900071C50F /* ViewController.swift in Sources */,
+				CBFBB18820CCEE490071C50F /* AchievementsRouter.swift in Sources */,
+				CBFBB18C20CCF03F0071C50F /* AchievementsInteractor.swift in Sources */,
+				CBFBB19420CD609F0071C50F /* AchievementsInterface.swift in Sources */,
+				CBFBB1A320D0959D0071C50F /* ImageManager.swift in Sources */,
+				CBFBB18520CCE4790071C50F /* RootRouter.swift in Sources */,
+				CBFBB18A20CCF0320071C50F /* AchievementsPresenter.swift in Sources */,
+				CBFBB18E20CCF0D20071C50F /* AchievementsViewController.swift in Sources */,
+				CBFBB19A20CE024A0071C50F /* UIElementExtension.swift in Sources */,
+				CBFBB19E20CF61380071C50F /* Environment.swift in Sources */,
+				CBFBB19220CCF2650071C50F /* Achievement.swift in Sources */,
+				CBFBB19820CE00ED0071C50F /* DataManager.swift in Sources */,
 				CBFBB16220CCD8900071C50F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,14 +289,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CBFBB16520CCD8900071C50F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CBFBB16620CCD8900071C50F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CBFBB16A20CCD8910071C50F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
